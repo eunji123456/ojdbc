@@ -31,6 +31,8 @@ public class AuthorInsert {
 				
 				
 				//3. SQL문 준비 / 바인딩 / 실행
+				
+			
 				String query = "insert into author values(SEQ_AUTHOR_ID.NEXTVAL, ? ,?)";
 				pstmt = conn.prepareStatement(query);
 				
@@ -38,8 +40,9 @@ public class AuthorInsert {
 				pstmt.setString(1, name);
 				pstmt.setString(2, ha);
 				
-				 countdb = pstmt.executeUpdate();
+				 countdb += pstmt.executeUpdate();
 				System.out.println("처리한 쿼리 개수 : "+countdb);
+				
 				// 4.결과처리
 				
 				
