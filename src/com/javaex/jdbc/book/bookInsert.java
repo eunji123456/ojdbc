@@ -1,7 +1,6 @@
 package com.javaex.jdbc.book;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -9,9 +8,9 @@ import java.sql.SQLException;
 public class bookInsert {	
 public static void main(String []args) {
 
-		String title ="햇님 달님 ";
-		String pubs= "정관장";
-		String indate = "2017/08/19";
+		String title ="디지몬  ";
+		String pubs= "포켓몬";
+		String indate = "2017/08/20";
 		int aid = 39;
 		// TODO Auto-generated method stub
 		//0. import java.sql.*;
